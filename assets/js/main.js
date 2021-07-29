@@ -20,102 +20,36 @@
 			}, 100);
 		});
 
+	/* --------------------- Portfolio Logic ------------------------- */ 
+	var opens = document.getElementsByClassName("video-open");
+	var videoWindows = document.getElementsByClassName("video-window");
+	var videoPanels = document.getElementsByClassName("video-panel");
+	var closes = document.getElementsByClassName("video-close");	
 
-		const open = document.getElementById('open');
-		const videoPanel = document.getElementById('video_panel');
-		const videoWindow = document.getElementById('video_window');
-		const close = document.getElementById('close');
-
-		const open2 = document.getElementById('open2');
-		const videoPanel2 = document.getElementById('video_panel2');
-		const videoWindow2 = document.getElementById('video_window2');
-		const close2 = document.getElementById('close2');
-
-		const open3 = document.getElementById('open3');
-		const videoPanel3 = document.getElementById('video_panel3');
-		const videoWindow3 = document.getElementById('video_window3');
-		const close3 = document.getElementById('close3');
-
-		const open4 = document.getElementById('open4');
-		const videoPanel4 = document.getElementById('video_panel4');
-		const videoWindow4 = document.getElementById('video_window4');
-		const close4 = document.getElementById('close4');
-
-		const open5 = document.getElementById('open5');
-		const videoPanel5 = document.getElementById('video_panel5');
-		const videoWindow5 = document.getElementById('video_window5');
-		const close5 = document.getElementById('close5');
-
-		const open6 = document.getElementById('open6');
-		const videoPanel6 = document.getElementById('video_panel6');
-		const videoWindow6 = document.getElementById('video_window6');
-		const close6 = document.getElementById('close6');
-
-		open.addEventListener('click', ()=> {
-			videoWindow.classList.add('show');
-			videoPanel.classList.add('input');
-		})
-
-		close.addEventListener('click', ()=> {
-			videoWindow.classList.remove('show');
-			videoPanel.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
-
-		open2.addEventListener('click', ()=> {
-			videoWindow2.classList.add('show');
-			videoPanel2.classList.add('input');
-		})
-
-		close2.addEventListener('click', ()=> {
-			videoWindow2.classList.remove('show');
-			videoPanel2.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
-
-		open3.addEventListener('click', ()=> {
-			videoWindow3.classList.add('show');
-			videoPanel3.classList.add('input');
-		})
-
-		close3.addEventListener('click', ()=> {
-			videoWindow3.classList.remove('show');
-			videoPanel3.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
-
-		open4.addEventListener('click', ()=> {
-			videoWindow4.classList.add('show');
-			videoPanel4.classList.add('input');
-		})
-
-		close4.addEventListener('click', ()=> {
-			videoWindow4.classList.remove('show');
-			videoPanel4.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
-
-		open5.addEventListener('click', ()=> {
-			videoWindow5.classList.add('show');
-			videoPanel5.classList.add('input');
-		})
-
-		close5.addEventListener('click', ()=> {
-			videoWindow5.classList.remove('show');
-			videoPanel5.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
-
-		open6.addEventListener('click', ()=> {
-			videoWindow6.classList.add('show');
-			videoPanel6.classList.add('input');
-		})
-
-		close6.addEventListener('click', ()=> {
-			videoWindow6.classList.remove('show');
-			videoPanel6.classList.remove('input');
-			$('iframe').attr('src', $('iframe').attr('src'));
-		})
+		for(var i = 1; i <= opens.length; i++) 
+		{
+			(function () {
+				var open 		=  	opens.item(i-1);
+				var videoWindow =   videoWindows.item(i-1);
+				var videoPanel 	= 	videoPanels.item(i-1);
+				var close 		= 	closes.item(i-1);
+				
+				open.addEventListener('click', ()=> {
+					videoWindow.classList.add('show');
+					videoPanel.classList.add('input');
+				})
+			
+				close.addEventListener('click', ()=> {
+					videoWindow.classList.remove('show');
+					videoPanel.classList.remove('input');
+					$("iframe").each(function() { 
+						var src= $(this).attr('src');
+						$(this).attr('src',src);  
+					});
+				})
+			}());
+		}
+	/* ----------------------------------------------------------------- */
 
 	// Nav.
 		var $nav_a = $nav.find('a');

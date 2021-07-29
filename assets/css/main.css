@@ -122,6 +122,7 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
+		padding-bottom: 0.5em;
 	}
 
 		h2.alt {
@@ -2671,7 +2672,7 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 	display: 0;
-	padding: 3em 1em;
+	padding: 1em 1em;
 	background-color: #dbdbdb;
 	width: 1100px;
 	height: 800px;
@@ -2686,7 +2687,12 @@ input, select, textarea {
 	pointer-events: auto;
 }
 
-.video-panel .close{
+.video-open {
+	display: block;
+	width: 100%;
+}
+
+.video-close{
 	position: absolute;
 	top: 0.5em;
 	right: 1em;
