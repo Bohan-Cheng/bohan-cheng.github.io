@@ -12,7 +12,6 @@
 			<div id="header">
 
 				<div class="top">
-
 					<!-- Avatar -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/me2.jpg" alt="" /></span>
@@ -23,7 +22,7 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Hello</span></a></li>
+								<li><a href="#home" id="top-link"><span class="icon solid fa-home">Hello</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
@@ -51,46 +50,43 @@
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="text-container">
-
+					<section id="home" class="one dark cover">
+						<div class="text-window">
 							<div class="text-panel">
-								<header>
-									<h2 class="text-centered">Hi! I'm <strong>Bohan</strong>, a Game Developer<br />
-									Programmer and Designer</h2>
-									<p class="text-centered2">Welcome to my website! Here you can learn more about me.</p>
-									<p class="text-centered2">Scroll down to check out my portfolio.</p>
-								</header>
+								<h2 class="text-centered">Hi! I'm Bohan, a Game Developer<br />
+								Programmer and Designer</h2>
+								<p class="text-centered2">Welcome to my website! Here you can learn more about me.<br />
+								Scroll down to check out my portfolio.</p>
 							</div>
-							<footer>
-								<a href="#portfolio" class="button scrolly">Learn more</a>
-							</footer>
 						</div>
+
+						<a href="#portfolio" class="button scrolly">Learn more</a>
+
 					</section>
 
 				<!-- Portfolio -->
+				<div class="spacer"></div>
 					<section id="portfolio" class="two">
 						<div class="container">
 
 							<header>
 								<h2>Portfolio</h2>
 							</header>
-
-							<p>	Here you should find all my project videos, descriptions and explanations. My projects are<br />
-								mostly games since I am greatly interested in making games. I started making games since<br />
-								highschool. I will put down some key information about my project and what have I learned<br />
+							<p>	Here you should find all my project videos, descriptions and explanations. My projects are
+								mostly games since I am greatly interested in making games. I started making games since
+								highschool. I will put down some key information about my project and what have I learned
 								during the development of these games / applications.</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<input id="open" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 1</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<input id="open2" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 2</h3>
 										</header>
@@ -98,13 +94,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<input id="open3" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 3</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<input id="open4" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 4</h3>
 										</header>
@@ -112,13 +108,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<input id="open5" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 5</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<input id="open6" type="image" class="image fit" src="images/pic02.jpg"></input>
 										<header>
 											<h3>Game 6</h3>
 										</header>
@@ -127,6 +123,97 @@
 							</div>
 
 						</div>
+
+						<div id="video_window" class="video-window">
+							<div id="video_panel" class="video-panel">
+								<span id="close" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 1. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="video_window2" class="video-window">
+							<div id="video_panel2" class="video-panel">
+								<span id="close2" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 2. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="video_window3" class="video-window">
+							<div id="video_panel3" class="video-panel">
+								<span id="close3" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 3. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="video_window4" class="video-window">
+							<div id="video_panel4" class="video-panel">
+								<span id="close4" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 4. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="video_window5" class="video-window">
+							<div id="video_panel5" class="video-panel">
+								<span id="close5" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 5. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="video_window6" class="video-window">
+							<div id="video_panel6" class="video-panel">
+								<span id="close6" class="close">&#10006;</span>
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/qCtEp_JTAik?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<div class="description-window">
+									<p>Hi, my name is 6. I am a game developer and I have a game programming
+										diploma. I am very passionate about making games and programming in general. I started
+										making games since high school. I made a lot of projects throughout the years and learnt a lot
+										of things.</p>
+								</div>
+							</div>
+						</div>
+						
 					</section>
 
 				<!-- About Me -->
