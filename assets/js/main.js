@@ -19,6 +19,27 @@ let projectNames = [
 	"Matching Bird"
 ];
 
+let ProjectDescriptions = [
+	"During the development of NthState, I tried a lot of camera styles, lighting styles and colorings. The theme for the jam was 'Your environment impacts you.' I quickly came up with an idea of rotating the map to win concept. It was challenging to design a game with no controllable character. The game was heavily based on Unity physics, so I configured few things to have a fairly realistic bouncing and collision physics.",
+	"PaintMan was a 48 hour game jam with the theme 'Color changes everything'. I came up with an infinite runner idea. The player controls a character to collect paint orbs that can be used to paint the body color or mix them to match the next gate. I used a teleportation loop instead of a map generator to achieve the infinite runway. During the dev of this game, I learned how to play with materials in code, shader programming and the new input system.",
+	"Dust Explosion was made with Unreal in both C++ and blueprint combined. It was an experimental project to test my C++ skills with Unreal Engine 4. During this project. I found a way to do AI voice acting and programed a voice trigger system. I played around with different types of weapons. They were wrote in a good object-oriented way, so any other weapons can be implemented easily. I also modeled and animated the player hands and the weapons. I made the camera more realistic when shrank. I also adde some game feel into the level.",
+	"This is the description for Q*bert.",
+	"This is the description for Multiplayer FPS.",
+	"This is the description for Ring of Fire.",
+	"This is the description for Viking.",
+	"This is the description for UE4 Networking.",
+	"This is the description for Ubisoft NEXT 2021.",
+	"This is the description for 2D Weather System.",
+	"This is the description for Pong! 3D.",
+	"This is the description for Lord's Blessing.",
+	"This is the description for Match3.",
+	"This is the description for City 2.",
+	"This is the description for Bluestone Engine.",
+	"This is the description for Ball Game.",
+	"This is the description for Light Project.",
+	"This is the description for Matching Bird."
+];
+
 let videoSrcs = [
 	"https://www.youtube.com/embed/pcO76Q1Q5XM",
 	"https://www.youtube.com/embed/qCtEp_JTAik",
@@ -38,28 +59,6 @@ let videoSrcs = [
 	"https://www.youtube.com/embed/iphHqxK29og",
 	"https://www.youtube.com/embed/1u0vV13f1J0",
 	"https://www.youtube.com/embed/cGToVIPQVls"
-	
-];
-
-let ProjectDescriptions = [
-	"This is the description for NthState, something something, blah blah blah blah, this and that, that and that and this thats right.",
-	"This is the description for PaintMan, something something, blah blah blah blah, this and that, that and that and this thats right.",
-	"This is the description for Dust Explosion, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Q*bert, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Multiplayer FPS, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Ring of Fire, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Viking, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for UE4 Networking, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Ubisoft NEXT 2021, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for 2D Weather System, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Pong! 3D, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Lord's Blessing, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Match3, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for City 2, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Bluestone Engine, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Ball Game, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Light Project, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough.",
-	"This is the description for Matching Bird, something something, blah blah blah blah, this and that, that and that and this thats right. Dust explosion is a game that blah blah blah blah here should be a lot of text and stuff, something something yes this is long enough."
 ];
 
 (function($) {
