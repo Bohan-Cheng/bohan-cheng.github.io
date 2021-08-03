@@ -21,7 +21,7 @@ let projectNames = [
 
 let ProjectDescriptions = [
 	"During the development of NthState, I tried a lot of camera styles, lighting styles and colorings. The theme for the jam was 'Your environment impacts you.' I quickly came up with an idea of rotating the map to win concept. It was challenging to design a game with no controllable character. The game was heavily based on Unity physics, so I configured few things to have a fairly realistic bouncing and collision physics.",
-	"PaintMan was a 48 hour game jam with the theme 'Color changes everything'. I came up with an infinite runner idea. The player controls a character to collect paint orbs that can be used to paint the body color or mix them to match the next gate. I used a teleportation loop instead of a map generator to achieve the infinite runway. During the dev of this game, I learned how to play with materials in code, shader programming and the new input system.",
+	"PaintMan is a 48 hour game jam game with the theme 'Color changes everything'. I came up with an infinite runner idea. The player controls a character to collect paint orbs that can be used to paint the body color or mix them to match the next gate. I used a teleportation loop instead of a map generator to achieve the infinite runway. During the dev of this game, I learned how to play with materials in code, shader programming and the new input system.",
 	"Dust Explosion was made with Unreal in both C++ and blueprint combined. It was an experimental project to test my C++ skills with Unreal Engine 4. During this project. I found a way to do AI voice acting and programed a voice trigger system. I played around with different types of weapons. They were wrote in a good object-oriented way, so any other weapons can be implemented easily. I also modeled and animated the player hands and the weapons. I made the camera more realistic when shrank. I also adde some game feel into the level.",
 	"This is the description for Q*bert.",
 	"This is the description for Multiplayer FPS.",
@@ -37,7 +37,7 @@ let ProjectDescriptions = [
 	"This is the description for Bluestone Engine.",
 	"This is the description for Ball Game.",
 	"This is the description for Light Project.",
-	"This is the description for Matching Bird."
+	"Matching Bird is the very first game that I made back in high school. The game was written in pure Java and with default drawing functions. It was sure an enlightenment. I learned how computers draws vertices and fills pixels, how to process keyboard and mouse inputs. I also learned how to program a simple collision. During the development of the game, I tried and explored a lot of things that came up on my mind that could be achieved by programming."
 ];
 
 let videoSrcs = [
