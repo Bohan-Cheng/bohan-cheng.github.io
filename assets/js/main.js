@@ -1,5 +1,6 @@
 let projectNames = [
   "Dungeon Game",
+  "LuvBug Learning",
   "Cosmic Survival",
   "NthState",
   "PaintMan",
@@ -23,6 +24,7 @@ let projectNames = [
 
 let ProjectDescriptions = [
   "Currently in development: A dungeon-crawling RPG focused on exploration and steady progression. Jump into short, replayable dungeon runs—each packed with secrets, traps, and loot—while building your strength between dives. Perfect for quick sessions with lasting rewards. Early stages, but big ambitions!",
+  "LuvBug Learning: An educational game platform focused on social-emotional learning for kids. I contributed to the checkpoint system embedded in the platform to track progress and enhance engagement, and implemented gameplay features across multiple mini-games to support interactive learning.",
   "Cosmic Survival was completed in 2 months' time. This game is an exhilarating 2D roguelike survival game where players face an endless swarm of oncoming enemies, continuously leveling up and gaining powerful abilities to withstand the ever-escalating threat. Featuring intense, non-stop action, the game challenges players to test their reflexes and strategic thinking as they strive to survive and conquer the cosmic onslaught. Epic boss battles add thrilling milestones to this relentless battle for survival. </br></br>Download for free on itch.io: <a target=\"_blank\" href=\"https://depressedcookie.itch.io/cosmic-survival\" style=\"color: blue;\"> Click here to download </a> </br>Download for free on APP Store: <a target=\"_blank\" href=\"https://apps.apple.com/ca/app/cosmic-survival/id6465034433\" style=\"color: blue;\"> Click here to download </a> </br>Download for free on Google Play: <a target=\"_blank\" href=\"https://play.google.com/store/apps/details?id=com.DefaultCompany.CosmicSurvival\" style=\"color: blue;\"> Click here to download </a>",
   "During the development of NthState, I tried a lot of camera styles, lighting styles and colorings. The theme for the jam was 'Your environment impacts you.' I quickly came up with an idea of rotating the map to win concept. It was challenging to design a game with no controllable character. The game was heavily based on Unity physics, so I configured few things to have a fairly realistic bouncing and collision physics. </br></br>Play for free on itch.io : <a target=\"_blank\" href=\"https://depressedcookie.itch.io/nth-state\" style=\"color: blue;\"> Click here to play </a>",
   "PaintMan is a 48 hour game jam game with the theme 'Color changes everything'. I came up with an infinite runner idea. The player controls a character to collect paint orbs that can be used to paint the body color or mix them to match the next gate. I used a teleportation loop instead of a map generator to achieve the infinite runway. During the dev of this game, I learned how to play with materials in code, shader programming and the new input system. </br></br>Play for free on itch.io : <a target=\"_blank\" href=\"https://depressedcookie.itch.io/paintman\" style=\"color: blue;\"> Click here to play </a>",
@@ -46,6 +48,7 @@ let ProjectDescriptions = [
 
 let videoSrcs = [
   "https://www.youtube.com/embed/RxnVSwKfU8s",
+  "https://www.youtube.com/embed/6GpMojlC7pg",
   "https://www.youtube.com/embed/p0scC458pgg",
   "https://www.youtube.com/embed/pcO76Q1Q5XM",
   "https://www.youtube.com/embed/qCtEp_JTAik",
