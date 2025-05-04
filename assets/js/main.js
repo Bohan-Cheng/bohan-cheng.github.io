@@ -1,4 +1,5 @@
 let projectNames = [
+  "Bullet Blitz (Networking)",
   "Dungeon Game",
   "LuvBug Learning",
   "Cosmic Survival",
@@ -24,6 +25,7 @@ let projectNames = [
 ];
 
 let ProjectDescriptions = [
+  "Bullet Blitz is a 2D multiplayer shooter where quick reflexes meet tactical ability play. Battle it out with friends using a variety of weapons, unique character abilities, and a distinct double jump mechanic that opens up fast, vertical movement. Tight controls, chaotic firefights, and creative mobility make every match a fast-paced, skill-driven showdown.",
   "Currently in development: A dungeon-crawling RPG focused on exploration and steady progression. Jump into short, replayable dungeon runs—each packed with secrets, traps, and loot—while building your strength between dives. Perfect for quick sessions with lasting rewards. Early stages, but big ambitions!",
   "LuvBug Learning: An educational game platform focused on social-emotional learning for kids. I contributed to the checkpoint system embedded in the platform to track progress and enhance engagement, and implemented gameplay features across multiple mini-games to support interactive learning.",
   "Cosmic Survival was completed in 2 months' time. This game is an exhilarating 2D roguelike survival game where players face an endless swarm of oncoming enemies, continuously leveling up and gaining powerful abilities to withstand the ever-escalating threat. Featuring intense, non-stop action, the game challenges players to test their reflexes and strategic thinking as they strive to survive and conquer the cosmic onslaught. Epic boss battles add thrilling milestones to this relentless battle for survival. </br></br>Download for free on itch.io: <a target=\"_blank\" href=\"https://depressedcookie.itch.io/cosmic-survival\" style=\"color: blue;\"> Click here to download </a> </br>Download for free on APP Store: <a target=\"_blank\" href=\"https://apps.apple.com/ca/app/cosmic-survival/id6465034433\" style=\"color: blue;\"> Click here to download </a> </br>Download for free on Google Play: <a target=\"_blank\" href=\"https://play.google.com/store/apps/details?id=com.DefaultCompany.CosmicSurvival\" style=\"color: blue;\"> Click here to download </a>",
@@ -49,6 +51,7 @@ let ProjectDescriptions = [
 ];
 
 let videoSrcs = [
+  "https://www.youtube.com/embed/BVJx4v1RM4o",
   "https://www.youtube.com/embed/RxnVSwKfU8s",
   "https://www.youtube.com/embed/6GpMojlC7pg",
   "https://www.youtube.com/embed/p0scC458pgg",
