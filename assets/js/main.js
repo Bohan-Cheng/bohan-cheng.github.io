@@ -2,7 +2,7 @@ let projectNames = [
   "Dungeon Game",
   "LuvBug Learning",
   "Cosmic Survival",
-  "Beat Hero",
+  "Beat Hero (1-day demo)",
   "NthState",
   "PaintMan",
   "Dust Explosion",
