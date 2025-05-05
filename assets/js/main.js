@@ -47,7 +47,7 @@ let ProjectDescriptions = [
   "This is the description for Bluestone Engine.",
   "This is the description for Ball Game.",
   "This is the description for Light Project.",
-  "Matching Bird is the very first game that I made back in high school. The game was written in pure Java and with default drawing functions. It was sure an enlightenment. I learned how computers draws vertices and fills pixels, how to process keyboard and mouse inputs. I also learned how to program a simple collision. During the development of the game, I tried and explored a lot of things that came up on my mind that could be achieved by programming."
+  "<span style=\"font-weight: bold;\">Matching Bird</span> is the first game I ever developed—written in <span style=\"color: orange; font-weight: bold;\">pure Java</span> using the language’s default drawing functions. Created during high school, the project was a hands-on journey into how computers render graphics, handle input, and process game logic. I implemented custom rendering, basic collision detection, and input handling from scratch, gaining an early understanding of how games work at a low level. This project sparked my passion for game development and encouraged me to explore programming as a creative tool to bring interactive ideas to life."
 ];
 
 let videoSrcs = [
