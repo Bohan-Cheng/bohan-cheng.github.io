@@ -336,35 +336,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-document.getElementById('contact-form').addEventListener('submit', async (e) => {
-  e.preventDefault(); // 阻止默认提交
-  const form = e.target;
-  const formData = new FormData(form);
-  const alertEl = document.getElementById('form-alert');
-
-  try {
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if (response.ok) {
-      alertEl.textContent = '✅ Message sent successfully!';
-      alertEl.className = 'form-alert success';
-      form.reset(); // 清空表单
-    } else {
-      throw new Error('Form submission failed');
-    }
-  } catch (error) {
-    alertEl.textContent = '❌ Failed to send message. Please try again.';
-    alertEl.className = 'form-alert error';
-  }
-
-  // 显示提示并3秒后隐藏
-  alertEl.style.display = 'block';
-  setTimeout(() => {
-    alertEl.style.display = 'none';
-  }, 3000);
-});
