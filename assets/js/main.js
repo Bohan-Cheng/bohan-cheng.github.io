@@ -134,6 +134,21 @@ let videoSrcs = [
       $(this).attr('src', src);
     });
   })
+
+  // Close video panel if clicking on the overlay or the panel itself
+  projectWindow.addEventListener('click', (e) => {
+    if (e.target === projectWindow || e.target === projectPanel) {
+      projectWindow.classList.remove('show');
+      projectPanel.classList.remove('input');
+
+      $("iframe").each(function () {
+        var src = $(this).attr('src');
+        $(this).attr('src', src);
+      });
+    }
+  });
+
+
   /* ----------------------------------------------------------------- */
 
   // Nav.
