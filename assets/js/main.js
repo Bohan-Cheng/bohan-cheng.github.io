@@ -231,3 +231,39 @@ let videoSrcs = [
     });
 
 })(jQuery);
+
+window.addEventListener("DOMContentLoaded", () => {
+  const feed = document.getElementById("news-feed");
+
+  if (!feed) return;
+
+  function showFeed() {
+    // Make it visible
+    feed.style.display = "inline-block";
+    void feed.offsetWidth; // Force reflow to allow transition
+    feed.classList.add("show");
+    feed.classList.remove("hide");
+
+    // Hide after 5s
+    setTimeout(() => {
+      feed.classList.add("hide");
+      feed.classList.remove("show");
+    }, 5000);
+
+    // Fully remove from layout after fade-out, then wait 10s and show again
+    setTimeout(() => {
+      feed.style.display = "none";
+
+      setTimeout(() => {
+        showFeed(); // Loop back again after 2 mins
+      }, 120000);
+    }, 5800); // Wait for fade-out to finish
+  }
+
+  // Start first appearance after 2s delay
+  setTimeout(showFeed, 2000);
+});
+
+
+
+
