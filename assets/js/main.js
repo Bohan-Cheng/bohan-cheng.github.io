@@ -270,8 +270,8 @@ window.addEventListener("DOMContentLoaded", () => {
       feed.style.display = "none";
 
       setTimeout(() => {
-        showFeed(); // Loop back again after 2 mins
-      }, 120000);
+        showFeed(); // Loop back again after 5 mins
+      }, 300000);
     }, 5800); // Wait for fade-out to finish
   }
 
