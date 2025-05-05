@@ -279,6 +279,42 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(showFeed, 2000);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const row = document.querySelector('.animate-row'); // 获取行容器
+  const allItems = Array.from(row.querySelectorAll('.item')); // 所有项目
+
+  // 默认显示 Featured
+  filterProjects('featured');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // 先触发淡出动画
+      row.classList.add('hidden');
+
+      // 动画结束后更新内容并淡入
+      setTimeout(() => {
+        const filter = btn.dataset.filter;
+        filterProjects(filter);
+        row.classList.remove('hidden');
+      }, 400); // 与 CSS 动画时间匹配
+    });
+  });
+
+  function filterProjects(filter) {
+    allItems.forEach(item => {
+      if (filter === 'all') {
+        item.style.display = 'block'; // 显示所有项目
+      } else {
+        item.style.display = item.classList.contains('featured') ? 'block' : 'none'; // 仅显示推荐
+      }
+    });
+  }
+});
+
 
 
 
