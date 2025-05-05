@@ -2909,6 +2909,24 @@ button:active,
   transition: color 0.3s ease;
 }
 
+.form-alert {
+  display: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form-alert.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.form-alert.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
 .resume-link:hover {
   color: #fff !important;
   /* 悬停变白 */
