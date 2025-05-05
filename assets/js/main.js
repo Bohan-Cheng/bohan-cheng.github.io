@@ -7,7 +7,7 @@ let projectNames = [
   "NthState",
   "PaintMan",
   "Dust Explosion",
-  "Q*bert",
+  "Q*bert Remake",
   "Multiplayer FPS",
   "Ring of Fire",
   "Viking",
