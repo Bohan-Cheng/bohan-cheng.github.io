@@ -315,6 +315,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const resumeBtn = document.getElementById('open-resume');
 
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', function (e) {
+      e.preventDefault();
 
+      const url = "assets/pdf/Bohan_Cheng_Resume.pdf";
+      const width = 800;
+      const height = 600;
+      const left = (screen.width - width) / 2;
+      const top = (screen.height - height) / 2;
 
+      window.open(
+        url,
+        'ResumePopup',
+        `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+      );
+    });
+  }
+});
