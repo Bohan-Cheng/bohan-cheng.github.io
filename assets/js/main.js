@@ -339,21 +339,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-document.getElementById("custom-email-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent actual form POST
-
-  const name = encodeURIComponent(document.getElementById("name").value);
-  const email = encodeURIComponent(document.getElementById("email").value);
-  const message = encodeURIComponent(document.getElementById("message").value);
-
-  // Replace with your real FormSubmit email link
-  const baseUrl = "https://formsubmit.co/el/wizico";
-
-  // Optional: redirect after submission
-  const redirectUrl = encodeURIComponent("https://bohan-cheng.github.io/#contact");
-
-  const fullUrl = `${baseUrl}/?name=${name}&email=${email}&message=${message}&subject=Message+From+Website&next=${redirectUrl}`;
-
-  window.location.href = fullUrl;
-});
