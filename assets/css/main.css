@@ -625,7 +625,7 @@ br.clear {
   }
   
   .row > .item {
-    flex: 0 0 48%; /* Two columns, each taking ~50% width with some gap */
+    flex: 0 0 20%; /* Two columns, each taking ~50% width with some gap */
     box-sizing: border-box;
   }
   
