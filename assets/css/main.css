@@ -624,11 +624,6 @@ br.clear {
     box-sizing: border-box;
   }
   
-  .row > .item {
-    flex: 0 0 20%; /* Two columns, each taking ~50% width with some gap */
-    box-sizing: border-box;
-  }
-  
   .row.gtr-uniform>*> :last-child {
     margin-bottom: 0;
   }
@@ -702,7 +697,7 @@ br.clear {
   }
 
   .row>.col-6-wide {
-    width: 50%;
+    width: 20%;
   }
 
   .row>.off-6-wide {
