@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🥚 Easter Egg Found!</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0d0d0d;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00ff88;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+    }
+    .egg {
+      font-size: 8rem;
+      animation: bounce 1s ease-in-out infinite;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 30px 0 20px;
+      text-shadow: 0 0 10px #00ff88;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #888;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    .hint {
+      margin-top: 40px;
+      padding: 20px;
+      border: 1px dashed #00ff88;
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .star {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle 2s ease-in-out infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    .konami {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 0.8rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  
+  <div class="container">
+    <div class="egg">🥚</div>
+    <h1>You found it!</h1>
+    <p>Congratulations! You've discovered the hidden Easter egg page. Not many people know this URL exists...</p>
+    
+    <div class="hint">
+      <strong>🐣 Hint:</strong> There's nothing here yet.<br>
+      But if you're Bohan — tell Bob what you want to add!
+    </div>
+  </div>
+
+  <div class="konami">v1.0</div>
+
+  <script>
+    // Generate stars
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 50; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.width = Math.random() * 3 + 1 + 'px';
+      star.style.height = star.style.width;
+      star.style.animationDelay = Math.random() * 2 + 's';
+      starsContainer.appendChild(star);
+    }
+
+    // Konami code detection
+    const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+    let kIndex = 0;
+    document.addEventListener('keydown', (e) => {
+      if (e.key === konami[kIndex]) {
+        kIndex++;
+        if (kIndex === konami.length) {
+          document.body.style.background = 'linear-gradient(135deg, #ff00cc, #3333ff)';
+          document.querySelector('h1').textContent = '🎉 KONAMI!';
+          kIndex = 0;
+        }
+      } else {
+        kIndex = 0;
+      }
+    });
+  </script>
+</body>
+</html>
